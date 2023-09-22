@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website.css">
+</head>
+<style>
+   
+    body {
+        font-family: Comfortaa;
+    }
+
+    .imgn img {
+        width: 160px;
+        height: 30px;
+
+    }
+
+    .imgn {
+        margin: 10px;
+    }
+
+
+
+    .poster {
+
+        background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&w=600");
+        height: 800px;
+        width: auto;
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgb(255, 255, 255);
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: fixed;
+        height: 80px;
+
+
+    }
+
+
+    .header div {
+        padding-top: 12px;
+    }
+
+    body img {
+        width: 100%;
+        height: 700px;
+    }
+
+    .menu ul {
+        display: flex;
+        /* border: 2px solid black; */
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding-right: 60px;
+
+
+    }
+
+    .menu ul li {
+        list-style-type: none;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .menu ul li:hover {
+        text-decoration: underline 3px;
+        color: rgb(255, 183, 183);
+    }
+
+    .icon {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .second {
+        display: flex;
+        padding: 60px;
+        width: 100%;
+        height: 550px;
+    }
+
+    .f1 {
+        width: 30%;
+        height: 300px;
+    }
+
+    .f2 {
+        width: 33%;
+        height: 300px;
+        justify-content: left;
+    }
+
+    .f2 img {
+        width: 97%;
+        height: 550px;
+        /* padding: 15px; */
+    }
+
+    .f3 {
+        width: 33%;
+        height: 300px;
+    }
+
+    .f1 h1 {
+        font-size: 42px;
+        text-align: center;
+        padding-right: 50px;
+        text-align: left;
+
+    }
+
+    .f1 p {
+        font-size: 20px;
+        color: rgb(78, 77, 77);
+        padding-right: 50px;
+    }
+
+    .f1 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .upper {
+        height: 120px;
+    }
+
+    .f3 h1 {
+        font-size: 120px;
+        text-align: left;
+        padding-left: 80px;
+
+
+
+    }
+
+    .but {
+        text-align: left;
+        padding-left: 74px;
+    }
+
+    .f3 p {
+        text-align: left;
+        font-size: 20px;
+        padding-left: 74px;
+        padding-right: 90px;
+    }
+
+    .f3 button {
+        width: 140px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .f3 button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .textt {
+        color: white;
+        text-align: center;
+        margin-top: 500px;
+
+    }
+
+    .textt h1 {
+        font-size: 55px;
+    }
+
+    .gallery {
+        /* border: 2px solid red; */
+        height: 1400px;
+        width: 100%;
+
+        /* padding-top: 160px; */
+    }
+
+    .gall1 {
+        display: flex;
+        height: 700px;
+        width: 100%;
+        /* border: 2px solid blue; */
+
+    }
+
+    .gall2 {
+        display: flex;
+        height: 700px;
+        width: 100%;
+        /* border: 2px solid blue; */
+
+    }
+
+    .gall1 img {
+        height: 700px;
+        width: 33%;
+
+    }
+
+    .gall2 img {
+        height: 700px;
+        width: 33%;
+
+    }
+
+    .thirdimg {
+        display: flex;
+        height: auto;
+        width: 90%;
+
+        margin: auto;
+
+    }
+
+    .thirdimg div {
+        /* border: 2px solid blue; */
+        padding-right: 30px;
+        padding-top: 30px;
+
+    }
+
+    .third {
+        height: 630px;
+        /* border: 2px solid red; */
+        padding-top: 90px;
+        /* justify-content: center; */
+    }
+
+    .thirdimg img {
+        height: 300px;
+        width: 100%;
+
+    }
+
+    .fourth {
+        background-color: rgb(19, 19, 19);
+        color: white;
+        height: 600px;
+        width: 100%;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .fourth div {
+        /* border: 2px solid white; */
+        width: 55%;
+        margin: auto;
+
+    }
+
+    .fourth h1 {
+        padding-top: 150px;
+        font-size: 50px;
+    }
+
+    .fourth p {
+        font-size: 20px;
+        color: rgb(187, 187, 187);
+    }
+
+    .fourth img {
+        width: 60px;
+        height: 60px;
+        padding-top: 30px;
+    }
+
+    .five {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .five h1 {
+        font-size: 45px;
+    }
+
+    .firstfive {
+        /* border:2px solid black; */
+        height: 600px;
+        display: flex;
+        /* padding: 10px; */
+        padding: 30px;
+
+    }
+
+    .outer {
+        margin: 20px;
+        height: 500px;
+        width: 100%;
+        border: 1px solid rgb(181, 181, 181);
+
+        /* display: grid; */
+    }
+
+    .money {
+        border: 1px solid rgb(181, 181, 181);
+        height: 30%;
+
+    }
+
+    .plan {
+        /* border: 2px solid rgb(21, 189, 85); */
+        height: 70%;
+
+
+    }
+
+    .plan p {
+        margin: 20px;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        line-height: 30px;
+    }
+
+    .plan button {
+        border: 1px solid black;
+        background-color: white;
+        height: 50px;
+        width: 90%
+    }
+
+    .plan button:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+
+    .money button {
+        margin-top: 30px;
+        height: 40px;
+        width: 30%;
+        font-size: 15px;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+    }
+
+    .six {
+        display: flex;
+    }
+
+    .six img {
+        width: 20%;
+        height: auto;
+    }
+
+    .footer {
+        height: 500px;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        color: white;
+
+        margin: auto;
+    }
+
+    .footernext img {
+        width: 180px;
+        height: 40px;
+    }
+
+    .footernext {
+        /* border: 2px solid red; */
+        width: 95%;
+        margin: auto;
+        height: 80%;
+        display: flex;
+
+    }
+
+    .jon {
+        width: 23%;
+        /* padding-right: 20px; */
+        padding-top: 68px;
+    }
+
+    .jon p {
+        font-size: 12px;
+    }
+
+    .nav {
+        width: 23%;
+        /* text-align: center; */
+        padding-left: 70px;
+        /* border: 2px solid red; */
+        padding-top: 68px;
+    }
+
+    .nav p {
+        font-size: 12px;
+    }
+
+    .cont {
+        width: 23%;
+        /* border: 2px solid red; */
+        padding-top: 68px;
+    }
+
+    .cont p {
+        font-size: 12px;
+    }
+
+    .sub {
+        width: 23%;
+        padding-top: 68px;
+    }
+
+    .sub button {
+        height: 50px;
+        width: 299px;
+        margin-top: 15px;
+        background-color: rgb(47, 47, 47);
+        color: rgb(255, 255, 255);
+    }
+
+    .inpute input {
+        width: 290px;
+        height: 50px;
+        background-color: rgb(65, 65, 65);
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="poster">
+
+        <div class="header">
+            <div class="imgn">
+                <img src="https://preview.colorlib.com/theme/josanclick/assets/img/logo/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><i class='bx bx-home'></i> Home</li>
+                    <li><i class='bx bx-bookmark-heart'></i> Portfolio</li>
+                    <li><i class='bx bx-list-check'></i> Services</li>
+                    <li><i class='bx bxs-user'></i> About</li>
+                    <li><i class='bx bxs-videos'></i> Blog</li>
+                    <li><i class='bx bxs-book-content'></i> Contact</li>
+                </ul>
+
+            </div>
+            <div class="icon" style="padding-top: 26px;">
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+
+        </div>
+        <div class="textt">
+            <p>Natute Beauty</p>
+            <h1>MIAMI LAKE</h1>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="f1">
+            <h1>I Click Moment, that you love</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/singneture.png" alt="">
+        </div>
+        <div class="f2">
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/about1.jpg" alt="">
+        </div>
+        <div class="f3">
+            <div class="upper">
+                <h1>O8</h1>
+            </div>
+
+            <p style="font-size: 17px;">Years of Experience</p>
+            <p><b>"A gray cat slinks past a wooden house. There’s has something a little intimidating attempting to
+                    describe.</b></p>
+            <div class="but">
+                <button>MY WORK</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- ............... -->
+
+    </div>
+
+    <div class="gallery">
+        <div class="gall1">
+            <img src="https://images.pexels.com/photos/6590699/pexels-photo-6590699.jpeg" alt="">
+            <img src="https://images.pexels.com/photos/14934612/pexels-photo-14934612.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+            <img src="https://images.pexels.com/photos/16776159/pexels-photo-16776159/free-photo-of-water-around-rocks-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+
+        </div>
+        <div class="gall2">
+            <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+            <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+            <img src="https://images.pexels.com/photos/3214944/pexels-photo-3214944.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+        </div>
+        <!-- third -->
+
+        <div class="third">
+            <h1 style="padding-left: 70px;"> I do for you</h1>
+            <div class="thirdimg">
+                <div><img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/blog01.jpg" alt="">
+                    <h1>Event Photography</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam,
+                        eaque ipsa quae.</p>
+                </div>
+                <div><img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/blog02.jpg" alt="">
+                    <h1>Wedding Photography</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem
+                        aperiam,
+                        eaque ipsa quae.</p>
+                </div>
+                <div><img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/blog03.jpg" alt="">
+                    <h1>Family Photography</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem
+                        aperiam,
+                        eaque ipsa quae.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- fourth -->
+
+        <div class="fourth">
+            <div>
+                <h1>Testimonial</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum modi minus porro magnam aliquid
+                    corrupti similique
+                    natus cum consequuntur. Eos, nobis consequuntur est impedit quasi sunt? Facilis, culpa ut?"</p>
+                <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/founder-img.png" alt="">
+                <p style="font-size: 10px;">Graham cracker,disener at colirib</p>
+            </div>
+        </div>
+        <!-- five -->
+        <div class="five">
+            <h1>Choose a plan that suit you</h1>
+            <div class="firstfive">
+                <!--  -->
+                <div class="outer">
+                    <div class="money">
+                        <button>Photography</button>
+                        <div style="display: flex; justify-content: center; font-size: 23px;">
+                            <h3>$400</h3>
+                            <p style="font-size: 20px;">USD</p>
+                        </div>
+
+                    </div>
+                    <div class="plan">
+                        <p>Sed ut perspiciatis unde omnis iste. <br>
+                            Natus error sit voluptatem. <br>
+                            Accusantium Doloremque lauda <br>
+                            Totam rem aperiam. <br>
+                            Eaque ipsa quae. <br></p>
+                        <button>CHOOSE THIS PLAN</button>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="money">
+                        <button>Photography</button>
+                        <div style="display: flex; justify-content: center; font-size: 23px;">
+                            <h3>$400</h3>
+                            <p style="font-size: 20px;">USD</p>
+                        </div>
+
+                    </div>
+                    <div class="plan">
+                        <p>Sed ut perspiciatis unde omnis iste. <br>
+                            Natus error sit voluptatem. <br>
+                            Accusantium Doloremque lauda <br>
+                            Totam rem aperiam. <br>
+                            Eaque ipsa quae. <br></p>
+                        <button>CHOOSE THIS PLAN</button>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="money">
+                        <button>Photography</button>
+                        <div style="display: flex; justify-content: center; font-size: 23px;">
+                            <h3>$400</h3>
+                            <p style="font-size: 20px;">USD</p>
+                        </div>
+
+                    </div>
+                    <div class="plan">
+                        <p>Sed ut perspiciatis unde omnis iste. <br>
+                            Natus error sit voluptatem. <br>
+                            Accusantium Doloremque lauda <br>
+                            Totam rem aperiam. <br>
+                            Eaque ipsa quae. <br></p>
+                        <button>CHOOSE THIS PLAN</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- six -->
+        <div class="six">
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/instra1.jpg" alt="">
+
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/instra2.jpg" alt="">
+
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/instra3.jpg" alt="">
+
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/instra4.jpg" alt="">
+
+            <img src="https://preview.colorlib.com/theme/josanclick/assets/img/gallery/instra5.jpg" alt="">
+        </div>
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="footernext">
+                <div class="jon">
+                    <img src="https://preview.colorlib.com/theme/josanclick/assets/img/logo/logo.png" alt="">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                    <div class="icon">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="nav">
+                    <h3>Navigation</h3>
+
+                    <p>Home</p>
+                    <p>Portfolio</p>
+                    <p>Services</p>
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+
+
+                </div>
+                <div class="cont">
+                    <h3>Contact</h3>
+                    <p>87/A, Green lane, CA 6732</p>
+                    <p>Real State</p>
+                    <p>info@josanclick.com</p>
+                    <h2>+10 236 327 3782</h2>
+                </div>
+                <div class="sub">
+                    <h3>Subscribe Newsletter</h3>
+                    <div class="inpute">
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <!--  -->
+            <hr>
+            <h5 style="text-align: center; font-size: 15px;">Copyright ©2023 All rights reserved | This template is made
+                with <i class='bx bxs-heart-circle'></i> by Gopal pandey</h5>
+        </div>
+
+</body>
+
+</html>
