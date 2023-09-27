@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<style>
+    body{
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+  overflow-x: hidden; 
+    }
+    .banner-image{
+        background-image: url('https://images.pexels.com/photos/1468419/pexels-photo-1468419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+    }
+    .navbar{
+        width: auto;
+        
+    }
+    .heading-2 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1; }
+  @media (max-width: 991.98px) {
+    .heading-2 {
+      font-size: 60px; } }
+  @media (max-width: 991.98px) {
+    .heading-2 {
+      font-size: 40px; } }
+
+.heading {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700; }
+  @media (max-width: 991.98px) {
+    .heading {
+      font-size: 60px; } }
+  @media (max-width: 991.98px) {
+    .heading {
+      font-size: 40px; } }
+
+.subheading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700; }
+
+ 
+.btn:hover{
+    background-image: linear-gradient(to right, #f9e507 1%, #ffc005  51%);
+    color:rgb(0, 0, 29);
+    transition: 0.10s;
+    background-position: right center; /* change the direction of the change here */
+            
+            text-decoration: none;
+            
+            
+}
+.feature:hover i{
+    padding-top: 50px;
+    transition-duration: 0.5s;
+    
+    
+}
+.feature:hover p{
+   padding-bottom: 150px;
+   transition-duration: 0.5s;
+}
+.feature{
+    color: rgb(79, 79, 79);
+}
+.feature:hover{
+    background-image: linear-gradient(to right, #878787 1%, #464545  51%);
+    color: white;
+    padding-top: 0px;
+    border-radius:10px;
+    /* border: 5px solid #ffc005; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+.feature i{
+    padding-top: 70px;
+}
+    
+
+         
+.btn{
+    background-color: black;
+    color:rgb(187, 150, 0);
+    font-size: 20px;
+    border-color: rgb(255, 255, 3); 
+    border-radius: 20px; 
+    width: 170px;
+     height: auto;
+     padding: 10px;
+    text-align: center;
+    
+}
+
+.past{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+}
+.past:hover{
+    background-image: linear-gradient(to right, #f9e507 1%, #ffc005  51%);
+    color: black;
+}
+.section-5{
+    background-image: url('https://images.unsplash.com/photo-1516417156595-3ca5df62a3a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80');
+    
+    height:auto;
+    width: auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+.past p{
+    height: 100%;
+    
+    font-size: 14px;
+}
+
+
+
+</style>
+<body>
+
+   
+      <!-- banner image -->
+     
+      <div class="banner-image img-fluid w-100 vh-100 justify-content-center ">
+        <div class="mask img-fluid w-100 vh-100" style="background-color: rgba(0, 0, 0, 0.6);">
+             <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark  bg-transparent ">
+    <div class="container border-danger">
+      <a class="navbar-brand" href="#"><span class="text-white display-6"><b>Acti</b><span class="text-warning display-6">o</span>n</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-warning" aria-current="page" href="#Home" style="font-size: 20px;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 20px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">menu one</a></li>
+              <li><a class="dropdown-item" href="#">menu two</a></li>
+              <li><a class="dropdown-item" href="#">menu three</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;" href="#">Contact Us</a>
+          </li>
+
+          
+        </ul>
+        
+      </div>
+      
+    </div>
+  </nav>
+  <div class="container" style="padding-top: 170px;">
+    <div class="row align-items-center v-h-full">
+        <div class="col-lg-10 col-xxl-6">
+        <h1 class="heading-2 text-white mb-4 aos-init aos-animate" data-aos="fade-up">New template B<span class="text-warning">oo</span>strap Five</h1>
+        <p class="subheading text-white mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">A free template by <span class="text-warning">Colorlib</span></p>
+       <button class="btn">READ MORE</button>
+        </div>
+        </div>
+  </div>
+        </div>
+        
+      </div>
+
+          </div>
+        
+
+<!-- section 2 -->
+<div class="section section-2 js-countdown"style="background-color:black;">
+    <div class="container "style="padding-top:150px;">
+    <div class="row mb-5">
+    <div class="col-lg-10 col-xxl-7 mx-auto text-center">
+    <span class="subheading text-white">Don't wait</span>
+    <h2 class="heading text-white"><span class="text-warning">E</span>vent <span class="text-warning">C</span>ountdown</h2>
+    </div>
+    </div>
+   
+    <div class="row  mb-5 custom-alert" style="display: block;">
+    <div class="col-12 text-center">
+    <p class="text-white">We are sorry, Event ended!</p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-7 mx-auto text-center">
+        <button class="btn">Get Started</button>
+    <div style="padding-bottom:150px;"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- section-3 -->
+<div style="padding-top: 150px;background-color: rgb(239, 242, 245);"></div>
+
+    <div style="background-color: rgb(239, 242, 245);" class="section section-3">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 mb-5">
+        <span class="subheading">Services</span>
+        <h2 class="heading"><span class="text-warning">O</span>ur Services</h2>
+        </div>
+        </div>
+        <div class="row features-wrap">
+        <div class="col-md-6 col-lg-4 col-xl-3 ">
+        <div class="feature">
+        <div>
+      
+        <i style="margin-left: 30px; " class="fa fa-camera fa-2x"></i>
+        
+        <h3 style="margin-top: 30px; margin-left: 30px;">Photography</h3>
+        <p style=" margin-left: 30px; padding-bottom: 30px; padding-right: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id aliquid blanditiis quos cum non vitae fugit, ipsa numquam.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 ">
+            <div class="feature">
+            <div>
+           
+            <i style="margin-left: 30px;"  class="fa fa-server fa-2x"></i>
+            
+            <h3 style="margin-top: 30px; margin-left: 30px;">Settings</h3>
+            <p style=" margin-left: 30px; padding-bottom: 30px; padding-right: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id aliquid blanditiis quos cum non vitae fugit, ipsa numquam.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 ">
+                <div class="feature">
+                <div>
+               
+                <i style="margin-left: 30px;" class="fa fa-image fa-2x"></i>
+                
+                
+                <h3 style="margin-top: 30px; margin-left: 30px;">Images</h3>
+                <p style=" margin-left: 30px; padding-bottom: 30px; padding-right: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id aliquid blanditiis quos cum non vitae fugit, ipsa numquam.</p>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 ">
+                    <div class="feature">
+                    <div>
+                    
+                    <i style="margin-left: 30px; " class="fa fa-clone fa-2x"></i>
+                   
+                    
+                    <h3 style="margin-top: 30px; margin-left: 30px;">Layered</h3>
+                    <p style=" margin-left: 30px; padding-bottom: 30px; padding-right: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id aliquid blanditiis quos cum non vitae fugit, ipsa numquam.</p>
+                    </div>
+                    </div>
+                    </div>
+        <!-- next section -->
+
+        <div style="padding-top: 120px; "></div>
+        <div style="background-color: white; width: 100%; margin: auto;position: relative   ;" >
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+        <div class="text-wrap">
+        <span style="font-size: 13px;" class="subheading">Who we are</span>
+        <h2 style="font-size: 98px;" class="heading mb-4">About <span class="text-warning">US</span></h2>
+        <p style="font-size: 18px;padding-right: 150px;">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Inventore velit dolores possimus, et aliquam aliquid quibusdam, magnam hic recusandae, voluptatibus nihil architecto quo optio fuga, doloribus soluta eius qui voluptatum?</p>
+        <p style="font-size: 18px;padding-right: 150px;">Quibusdam, hic. Corporis nisi, non nam totam velit accusantium maxime, nulla tenetur iure quia ipsum ullam tempora, fugit culpa architecto, esse sequi! Cumque deserunt, delectus doloremque sapiente repellat non sunt.</p>
+        <p class="mt-5">
+        <a href="#"  style="background-color: rgb(255, 255, 255);color: black; border: 3px solid rgb(255, 225, 0);" class="btn btn-primary-gradient-white-bg" >Get Started</a>
+        </p>
+        </div>
+        </div>
+        <div class="col-lg-6">
+        <img style="margin-bottom: 50px;width: 100%; height:800px ;" src="https://images.pexels.com/photos/1181445/pexels-photo-1181445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="img-fluid img-overlap">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- section-4 -->
+<div style="background-color: black;padding-top: 70px;"width100%>
+
+    <div  class="section section-4 section-pricing">
+        <div class="container">
+        <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+        <h3 style="font-size: 13px;" class="subheading text-white">Prices for everyone</h3>
+        <h2 style="font-size: 93px;" class="text-white heading">Pr<span class="text-warning">ic</span><span class="text-warning">i</span>ng</h2>
+        </div>
+        </div>
+        <div  class="row">
+        <div class="col-lg-9 mx-auto">
+        <div class="row align-items-baseline ">
+            <div class="col-lg-4">
+                <div style="background-image: linear-gradient(to right, #878787 1%, #464545  51%); color: white;padding: 30px;height: 450px;text-align: center; margin-bottom: 80px;border-radius: 10px;" >
+                <h3 style="font-size: 35px;" class="mb-4">
+                Starter
+                </h3>
+                <p style="color: #cfcfcf;" class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit hic quaerat.</p>
+                <hr>
+                <div class="line"></div>
+                <div class="price mb-4">
+                <span style="font-size: 25px;" class="currency">$</span>
+                <span style="font-size: 70px;" class="price">49</span>
+                <span style="font-size: 20px;" class="cents">.99</span>
+                </div>
+                
+                <p>
+                <a href="#" style="margin-top: 20px;" class="btn btn-primary-outline white px-5">Buy</a>
+                </p>
+                </div>
+                </div> 
+        <div class="col-lg-4">
+            <div style="background-image: linear-gradient(to right, #f9e507 1%, #ffc005  51%); color: rgb(44, 44, 44);padding: 30px;height: 480px;text-align: center; margin-bottom: 80px; padding-top: 80px; border-radius: 10px;" >
+                <h3 style="font-size: 45px;" class="mb-4">
+                    Basic
+                    </h3>
+                    <p style="color: #000000;" class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit hic quaerat.</p>
+                    <hr>
+                    <div class="line"></div>
+                    <div class="price mb-4">
+                    <span style="font-size: 25px;" class="currency">$</span>
+                    <span style="font-size: 70px;" class="price">199 </span>
+                    <span style="font-size: 20px;" class="cents">.99</span>
+                    </div>
+                    
+                    <p>
+                    <a href="#" class="btn btn-primary-outline white px-5">Buy</a>
+                    </p>
+            </div>
+            </div>
+            <div class="col-lg-4">
+                <div style="background-image: linear-gradient(to right, #878787 1%, #464545  51%); color: white;padding: 30px;height: 450px;text-align: center; margin-bottom: 80px;border-radius: 10px;" >
+                    <h3 style="font-size: 35px;" class="mb-4">
+                        Premium
+                        </h3>
+                        <p style="color: #cfcfcf;" class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit hic quaerat.</p>
+                        <hr>
+                        <div class="line"></div>
+                        <div class="price mb-4">
+                        <span style="font-size: 25px;" class="currency">$</span>
+                        <span style="font-size: 70px;" class="price">975</span>
+                        <span style="font-size: 20px;" class="cents">.99</span>
+                        </div>
+                        
+                        <p>
+                        <a href="#" style="margin-top: 20px;" class="btn btn-primary-outline white px-5">Buy</a>
+                        </p>
+                </div>
+                </div>  </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</div>
+       <!-- section-5 -->
+       <div class="section-5 img-fluid w-100 vh-100 ">
+        <div class="mask img-fluid w-100 vh-100" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div style="padding-top: 10%;" class="container">
+        <!-- <div class="row align-items-md-center v-h-full"> -->
+        <div class="col-lg-12">
+        <h3 class="subheading text-white">Features</h3>
+        <h2 class="heading text-white"><span class="text-warning">Mo</span>re Feat<span class="text-warning">ures</span></h2>
+        <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit hic quaerat.</p>
+        <div class="row">
+        <div class="col-lg-4  col-sm-12 ">
+        <div  class="past dark">
+        <div >
+            
+        <h3>Creative</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est odit, iste aliquam quibusdam. Repellendus fuga eligendi temporibus quam facilis.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-4  col-sm-12">
+        <div class="past dark">
+        <div>
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est odit, iste aliquam quibusdam. Repellendus fuga eligendi temporibus quam facilis.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-4  col-sm-12">
+        <div class="past dark">
+        <div>
+        <h3>Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est odit, iste aliquam quibusdam. Repellendus fuga eligendi temporibus quam facilis.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div style="padding-top: 200px;"></div>
+        </div>
+</div>
+
+<!-- section-6 -->
+
+<div style="background-color: rgb(3, 7, 14);" class="section section-6 half-overlay">
+    <div  class="container">
+    <!-- <div class="box-white"> -->
+    <div style="background-color: white; padding-top: 50px;padding-bottom: 50px; font-size: 20px;" class="row">
+    <div  class="col-lg-7 mx-auto text-center">
+    <h3 class="subheading">Testimonials</h3>
+    <h2 class="heading mb-5">People Says...</h2>
+    <div  class="testimonial-wrap">
+
+    <div  class="item-testimonial">
+    <blockquote>
+    Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Illo fugit dolorum ipsum, harum officia amet sunt voluptatibus quod doloribus molestiae optio molestias, pariatur distinctio et corporis. Eligendi quo et rerum excepturi tempore sapiente id provident cumque est voluptate, culpa dolorem!
+    </blockquote>
+    <div class=" bio-pic">
+    <img width="80px" height="80px" style="border-radius: 50%;" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid mb-2">
+    <div>
+    <strong class="d-block">Jessica Smith</strong>
+    <span class="d-block">Product Marketer @Google</span>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div> 
+</div>
+
+   
+    <div class="container">
+    <div class="row mb-5">
+    <div class="col-lg-7">
+    <h3 class="subheading text-white">Team</h3>
+    <h2 class="heading text-white">Meet our team</h2>
+    </div>
+    </div>
+    <div class="row justify-content-center">
+    <div class="col-lg-9">
+    <div class="row justify-content-between">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+    <div style="font-size: 18px;" class="team">
+    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Image" class="img-fluid">
+    <h3 style="color: white;padding-top: 15px;">Jessica Green</h3>
+    <p style="color: rgb(133, 132, 132);" class="position">CEO, Co-Founder</p>
+    <p style="color: rgb(133, 132, 132);" class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus numquam delectus ab, error ratione, tempore, illum architecto nam odit repellat ut sit consequatur, libero fuga laudantium quis unde! Aspernatur blanditiis odio hic magnam totam, laborum et quas laudantium, recusandae perferendis saepe eum porro ipsam omnis vel sunt aperiam, accusamus!</p>
+    <p><a href="#" class="btn btn-primary-gradient btn-bg-darker">Read bio</a></p>
+    </div>
+    </div>
+    <div class="col-lg-6 mb-5 mb-lg-0">
+    <div style="font-size: 18px;" class="team">
+    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Image" class="img-fluid">
+    
+    <h3 style="color: white;padding-top: 15px;">Jon Gold</h3>
+    <p style="color: rgb(133, 132, 132);"class="position">CTO, Co-Founder</p>
+    <p style="color: rgb(133, 132, 132);" class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quasi consequatur quae totam voluptatem aperiam impedit sapiente rem facilis deserunt laboriosam ab reiciendis quis accusamus, at vitae illo recusandae doloremque soluta tempore assumenda sit. Hic rem, error minus, voluptates nam tempora molestias dolore sed distinctio nihil dolores dolorem asperiores. Ex!</p>
+    <p><a href="#" class="btn btn-primary-gradient btn-bg-darker">Read bio</a></p>
+    </div>
+    <div style="padding-bottom: 120px;"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+     
+    <!-- section news letter -->
+    <div style="background-color: white;" class="section section-contact m-md-5 px-md-5">
+        <div style="background-color: rgb(232, 232, 232); padding-top: 8%;height: 400px; padding-left: 6%;" class="container">
+        <h2>Subscribe to Newsletter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, exercitationem!</p>
+        <form action="" class="form-contact">
+        <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="form-group">
+        <input style="background-color: transparent;font-size: 19px; border-top: #464545; border: none;box-shadow: none;" type="text" class="form-control" placeholder="Your name" ><hr>
+        
+        </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="form-group">
+            <input style="background-color: transparent;font-size: 19px; border-top: #464545; border: none;box-shadow: none;" type="text" class="form-control" placeholder="Your Email" ><hr>
+        </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <input style="background-color: rgb(15, 15, 15); color: white; width: 160px; height: 70px; border-radius: 30px;" type="submit" class="btnt btn-black btn-block" value="Subscribe">
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+
+        <!-- footer -->
+        <div class="section footer ">
+            <div class="container  text-center">
+            <div class="row">
+            <div class="col-lg-12 mx-auto">
+            <ul style="display: flex;  justify-content: center;" class="social list-unstyled">
+            <li><a href="#"><span style="margin: 20px;" ><i style="font-size: 40px;" class="fa fa-facebook-square"></i></span></a></li>
+            <li><a href="#"><span style="margin: 20px;"><i style="font-size: 40px;" class="fa fa-twitter-square"></i></span></a></li>
+            <li><a href="#"><span style="margin: 20px;"><i style="font-size: 40px;" class="fa fa-linkedin-square"></i></span></a></li>
+            <li><a href="#"><span style="margin: 20px;"><i style="font-size: 40px;" class="fa fa-soccer-ball-o"></i></span></a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-12">
+            <p>
+            Copyright © 2023 All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Gopal pandey</a></p>
+            </div>
+            </div>
+            </div>
+            </div>
+
+<!-- script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
