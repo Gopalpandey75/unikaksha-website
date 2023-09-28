@@ -66,6 +66,15 @@
 
 // Allow java script to react to html event-------------------------
 // onload.......................
-function myFunc(){
-    document.body.style="background-color:lightblue;"
-}
+
+// function myFunc(){
+//     document.body.style="background-color:lightblue;"
+// }
+
+
+// onchange......................
+
+// function myFunc(data){
+//     console.log('working',data);
+// }
+
