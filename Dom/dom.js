@@ -63,3 +63,9 @@
 //     document.querySelector("img").style="width:400px;"
 //     document.querySelector("img").src = 'https://images.pexels.com/photos/3881106/pexels-photo-3881106.jpeg?auto=compress&cs=tinysrgb&w=600'
 // }
+
+// Allow java script to react to html event-------------------------
+// onload.......................
+function myFunc(){
+    document.body.style="background-color:lightblue;"
+}
