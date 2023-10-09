@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <h1 id="demo">Taj Mahal</h1>
+     <p id="para">Lorem ipsum dolor sit amet.</p>
+     <h3 Id="head">unikaksha</h3> -->
+
+<h2>javascript Dom</h2>
+<p>this id the first paragraph</p>
+<p>this id the first paragraph</p>
+<p id="demo"></p>
+
+
+     <script>
+        // document.getElementById("demo").innerText="lal kila"
+        // document.getElementById("para").innerText="it is a new paragraph"
+        // document.getElementById("head").innerText="full stack devlopment"
+
+let element=document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 'the text in firt para is : '+ element[0].innerText
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat App</title>
+  
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+#chat-container {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    background-color: #fff;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #b2ebf2;
+}
+
+.bot-message {
+    background-color: #c8e6c9;
+}
+
+#message-input {
+    width: 70%;
+    padding: 8px;
+}
+
+#send-button {
+    width: 28%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div class="chat-message user-message">You: Hello!</div>
+        <div class="chat-message bot-message">AI: Hi there! How can I assist you?</div>
+    </div>
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button id="send-button">Send</button>
+    <script src="app.js"></script>
+</body>
+</html>

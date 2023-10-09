@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <h1>Currency Converter</h1>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option> <!-- Add more currency options as needed -->
+        </select>
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option> <!-- Add more currency options as needed -->
+        </select> <button onclick="convertCurrency()">Convert</button>
+    </div>
+    <div>
+        <h2>Result:</h2>
+        <div id="conversionResult"></div>
+    </div>
+    <script> // Exchange rates (sample rates, you can update with current rates)
+        const exchangeRates = {
+            USD: 1.0, EUR: 0.85, GBP: 0.72 // Add more currencies and their exchange rates as needed
+        };
+        function convertCurrency() {
+            const amountInput = document.getElementById('amount');
+            const fromCurrencySelect = document.getElementById('fromCurrency');
+            const toCurrencySelect = document.getElementById('toCurrency');
+            const conversionResult = document.getElementById('conversionResult');
+            const amount = parseFloat(amountInput.value);
+            const fromCurrency = fromCurrencySelect.value;
+            const toCurrency = toCurrencySelect.value;
+            if (!isNaN(amount)) {
+                const convertedAmount = amount * (exchangeRates[toCurrency] / exchangeRates[fromCurrency]);
+                conversionResult.textContent = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+            } else { conversionResult.textContent = 'Please enter a valid amount.'; }
+        } </script>
+</body>
+
+</html>
+</body>
+
+</html>
