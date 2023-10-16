@@ -1,0 +1,57 @@
+<!DOCTYPE htm1>
+
+<htm1>
+
+<body>
+
+<h2>The Navigator Object</h2>
+
+<p>The cookieEnabled property returns true if cookies are enabled:</p>
+
+<p id="demo"></p>
+<hr>
+<!-- next -->
+
+
+<p>The appName property returns the application name of the browser:</p>
+<p id="demom"></p>
+<p>Strange enough, "Netscape" is the application name for IE11, Chrome, Firefox, and Safari.</p>
+<hr>
+<!-- next -->
+
+<h2>The Navigator object</h2>
+<p>The app version property returns version information about the browser:</p>
+<p id="demo3"></p>
+<hr>
+
+<!-- next -->
+
+<h2>The Navigator object</h2>
+<p>The useragent propery returns the user-agent header sent by the browser:</p>
+<p id="demo4"></p>
+<script>
+
+document.getElementById("demo").innerHTML =
+
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+
+// next........................................................
+
+document.getElementById("demom").innerHTML =
+"navigator.appName is " + navigator.appName;
+
+// next........................................................
+
+document.getElementById("demo3").innerHTML =
+"navigator.appVersion is " + navigator.appVersion;
+
+// next........................................................
+document.getElementById("demo4").innerHTML =
+"navigator.userAgent is " + navigator.userAgent;
+
+
+
+</script>
+
+</html>
+

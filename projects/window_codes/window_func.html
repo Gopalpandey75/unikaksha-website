@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function opennewwindow(){
+            newwindow=window.open('','_blank','width=400,height=300');
+            newwindow.document.write("<h1>New window</h1>")
+            
+        }
+        function closecurrentwindow(){
+            window.close();
+        }
+        function movecurrentwindow(){
+            if(newwindow){
+                newwindow.moveTo(100,100);
+            }
+           
+        }
+        function resizecurrentwindow(){
+            if(newwindow){
+                newwindow.resizeTo(400,600)
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="opennewwindow()">Open New Window</button>
+    <button onclick="closecurrentwindow()">Close Current Window</button>
+    <button onclick="movecurrentwindow()">Move Current Window</button>
+    <button onclick="resizecurrentwindow()">Resize Current Window</button>
+</body>
+</html>

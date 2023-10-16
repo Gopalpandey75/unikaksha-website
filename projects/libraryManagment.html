@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg");
+            color: rgb(251, 255, 6);
+            background-size: cover;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        #bookList {
+            margin-top: 20px;
+        }
+
+        #addBookForm {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .book-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;"><i class="bi bi-book-fill"></i> Library Management System <i
+                class="bi bi-book-fill"></i></h1>
+        <BR></BR>
+        <br>
+        <div id="addBookForm">
+            <h2>Add a New Book <i class="bi bi-journal-plus"></i></h2>
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" required>
+
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" required>
+
+            <label for="bookPages">Pages:</label>
+            <input type="number" id="bookPages" required>
+
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <div style="background-color: rgb(35, 33, 33);" id="bookList"></div>
+    </div>
+    <p style="text-align: center; font-size: 12px;"><i class="bi bi-heart-fill"></i> made by Gopal <i
+            class="bi bi-heart-fill"></i></p>
+    <script>
+
+        let books = [];
+
+
+        function addBook() {
+            const title = document.getElementById('bookTitle').value;
+            const author = document.getElementById('bookAuthor').value;
+            const pages = document.getElementById('bookPages').value;
+
+            if (title && author && pages) {
+
+                books.push({ title, author, pages: parseInt(pages)});
+
+
+                displayBooks();
+            } else {
+                alert('Please enter title, author, and pages.');
+            }
+        }
+
+
+        function toggleReadStatus(index) {
+            books[index].read = !books[index];
+            displayBooks();
+        }
+
+        function removeBook(index) {
+            books.splice(index, 1);
+            displayBooks();
+        }
+
+
+        function displayBooks() {
+            const bookListContainer = document.getElementById('bookList');
+            bookListContainer.innerHTML = '';
+
+            books.forEach((book, index) => {
+                const bookItem = document.createElement('div');
+                bookItem.classList.add('book-item');
+                bookItem.innerHTML = `
+            <strong>${book.title}</strong> by ${book.author}, Pages: ${book.pages}
+            <label>
+               
+            </label>
+            <button onclick="removeBook(${index})">Remove</button>
+        `;
+                bookListContainer.appendChild(bookItem);
+            });
+        }
+
+
+        displayBooks();
+
+    </script>
+</body>
+
+</html>

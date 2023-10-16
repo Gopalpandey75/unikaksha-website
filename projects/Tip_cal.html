@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+        body {
+    background-color: #001b35;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Tip Calculator</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="billAmount">Bill Amount:</label>
+                    <input type="number" class="form-control" id="billAmount" placeholder="Enter bill amount">
+                </div>
+                <div class="form-group">
+                    <label for="tipPercentage">Tip Percentage:</label>
+                    <input type="number" class="form-control" id="tipPercentage" placeholder="Enter tip percentage">
+                </div>
+                <button class="btn btn-primary btn-block" onclick="calculateTip()">Calculate Tip</button>
+                <div class="mt-4 result" id="tipResult"></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <p style="text-align: center;">Made by Gopal <i class="bi bi-emoji-heart-eyes"></i></p>
+
+    <script>function calculateTip() {
+        const billAmount = parseFloat(document.getElementById("billAmount").value);
+        const tipPercentage = parseFloat(document.getElementById("tipPercentage").value);
+    
+        if (isNaN(billAmount) || isNaN(tipPercentage) || billAmount < 0 || tipPercentage < 0) {
+            document.getElementById("tipResult").innerHTML = '<div class="alert alert-danger">Please enter valid numbers.</div>';
+            return;
+        }
+    
+        const tipAmount = (billAmount * tipPercentage) / 100;
+        const totalAmount = billAmount + tipAmount;
+    
+        const resultHTML = `
+            <div class="box">
+                
+                <p>Total Amount (including tip): ${totalAmount.toFixed(2)}</p>
+            </div>
+        `;
+    
+        document.getElementById("tipResult").innerHTML = resultHTML;
+    }
+    </script>
+</body>
+</html>

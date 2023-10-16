@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    text-align: center;
+}
+
+#pdfContainer {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to PDF Converter</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="convertBtn">Convert to PDF</button>
+        <div id="pdfContainer"></div>
+    </div>
+
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const imageInput = document.getElementById("imageInput");
+        const convertBtn = document.getElementById("convertBtn");
+        const pdfContainer = document.getElementById("pdfContainer");
+    
+        convertBtn.addEventListener("click", function() {
+            const files = imageInput.files;
+    
+            if (files.length > 0) {
+                convertToPDF(files[0]);
+            } else {
+                alert("Please select an image file.");
+            }
+        });
+    
+        function convertToPDF(imageFile) {
+            // Actual conversion logic would be implemented on the backend.
+            // For simplicity, this example displays a message on the frontend.
+            pdfContainer.innerHTML = "<p>PDF conversion in progress...</p>";
+    
+            // You would typically make a backend API request to perform the conversion.
+            // Example: fetch("/api/convert", { method: "POST", body: formData })
+            // Then, the server would handle the conversion and respond with the PDF file.
+        }
+    });
+    </script>
+</body>
+</html>
