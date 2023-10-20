@@ -1,0 +1,79 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    justify-content: space-between;
+   
+    }
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+    
+    .header span{
+    padding: auto;
+    font-family:cursive;
+    }
+    
+    .home-main{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    }
+    
+    .abc{
+        background-color: black;
+        color: white;
+    border-bottom: 1px solid;
+    border-color: gray;
+    
+    }
+    
+    .user-id .img-cont{
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden;
+    }
+    
+    .user-id .img-cont img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:1.5rem ;
+    }
+    
+    .user-id{
+    padding: 10px;
+    }
+    
+    .card-body ul{
+    list-style-type: none;
+    }
+   .icons2 {
+    margin-right: 0px;
+   }
+   .icons2 i{
+    padding-right: 12px;
+   }
+   .user-name p{
+    font-size: 10px;
+}
+.colection{
+    justify-content: space-between;
+}
+.feedc{
+    display: grid;
+    line-height: 5px;
+    font-size: 14px;
+}
+.view{
+    color: rgb(111, 111, 111);
+}
+#comment_box{
+    margin-bottom: 15px;
+}
+  
