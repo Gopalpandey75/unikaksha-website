@@ -12,6 +12,7 @@ function H() {
         document.querySelector('.iconsone').childNodes[0].setAttribute('class','fa-solid fa-heart mx-2 py-2');
         document.querySelector('.iconsone').childNodes[0].setAttribute('style','color:red');
         setLike(like+1)
+        
     }
     function secondlike(){
         document.querySelector('.iconstwo').childNodes[0].setAttribute('class','fa-solid fa-heart mx-2 py-2');
